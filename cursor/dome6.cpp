@@ -15,7 +15,7 @@ public:
 
      // 纯虚析构是需要声明也需要实现     
      // 有了纯虚析构 之后 这个类就是抽象类 ，无法实例化对象
-    irtual ~Animal() = 0;
+    virtual ~Animal() = 0;
     virtual void speak() = 0;
 };
 Animal::~Animal()
