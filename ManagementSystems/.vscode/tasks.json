@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "E:/vs_code/cpp/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "Z:/ManagementSystems/ManagementSystems/main.cpp",
+                "Z:/ManagementSystems/ManagementSystems/workManager.cpp",
+                "-o",
+                "${fileDirname}/coin.exe/${fileBasenameNoExtension}.exe",
+                "-fexec-charset=GBK"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译所有相关的源文件。"
+        }
+    ]
+}
