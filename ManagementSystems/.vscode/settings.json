@@ -9,5 +9,15 @@
     },
     "C_Cpp.errorSquiggles": "enabled",
     "commentTranslate.hover.enabled": true,
-    "commentTranslate.targetLanguage": "zh-CN"
+    "commentTranslate.targetLanguage": "zh-CN",
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.cmakePath": "D:/A_App/cMake/bin/cmake.exe", // 更正为实际的 CMake 路径
+    "C_Cpp.default.compilerPath": "E:/vs_code/cpp/mingw64/bin/g++.exe",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/src",
+        "E:/vs_code/cpp/mingw64/include/c++/8.1.0",
+        "E:/vs_code/cpp/mingw64/include"
+    ],
+    "C_Cpp.default.defines": [],
+    "C_Cpp.default.cppStandard": "c++17"
 }

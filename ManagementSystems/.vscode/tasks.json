@@ -8,10 +8,10 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "Z:/ManagementSystems/ManagementSystems/main.cpp",
-                "Z:/ManagementSystems/ManagementSystems/workManager.cpp",
+                "Z:/ManagementSystems/src/main.cpp",
+                "Z:/ManagementSystems/src/workManager.cpp",
                 "-o",
-                "${fileDirname}/coin.exe/${fileBasenameNoExtension}.exe",
+                "D:/Temp/main.exe",
                 "-fexec-charset=GBK"
             ],
             "options": {

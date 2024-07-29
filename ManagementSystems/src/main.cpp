@@ -41,6 +41,6 @@ int main()
             break;
         }
     }
-
+    cin.get();
     return 0;
 }

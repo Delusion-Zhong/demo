@@ -1,0 +1,3 @@
+Z:/ManagementSystems/build/CMakeFiles/Main.dir
+Z:/ManagementSystems/build/CMakeFiles/edit_cache.dir
+Z:/ManagementSystems/build/CMakeFiles/rebuild_cache.dir
