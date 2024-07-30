@@ -17,7 +17,7 @@
                 // "src/boss.cpp",
                 "-o",
                 "${workspaceFolder}/bin/Main.exe",
-                "-fexec-charset=GBK"
+                "-fexec-charset=GBk"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
