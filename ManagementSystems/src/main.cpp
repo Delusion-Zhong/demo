@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+
     Worker *worker = nullptr; // 创建一个父类类型的空指针
     worker = new Employee(1, "张三", 1);
     worker->showinfo();

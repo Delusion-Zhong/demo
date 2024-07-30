@@ -10,7 +10,7 @@
                 "-g",
                 "Z:/ManagementSystems/src/main.cpp",
                 "Z:/ManagementSystems/src/workManager.cpp",
-                "Z:/ManagementSystems/src/employee.cpp", // 添加这个文件
+                "Z:/ManagementSystems/src/employee.cpp",
                 "-o",
                 "D:/Temp/main.exe",
                 "-fexec-charset=GBK"
