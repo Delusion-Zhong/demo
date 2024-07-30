@@ -68,11 +68,26 @@ include CMakeFiles/Main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Main.dir/flags.make
 
+CMakeFiles/Main.dir/src/boss.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/boss.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/boss.cpp.obj: Z:/ManagementSystems/src/boss.cpp
+CMakeFiles/Main.dir/src/boss.cpp.obj: CMakeFiles/Main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.dir/src/boss.cpp.obj"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/boss.cpp.obj -MF CMakeFiles\Main.dir\src\boss.cpp.obj.d -o CMakeFiles\Main.dir\src\boss.cpp.obj -c Z:\ManagementSystems\src\boss.cpp
+
+CMakeFiles/Main.dir/src/boss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/boss.cpp.i"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Z:\ManagementSystems\src\boss.cpp > CMakeFiles\Main.dir\src\boss.cpp.i
+
+CMakeFiles/Main.dir/src/boss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/boss.cpp.s"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Z:\ManagementSystems\src\boss.cpp -o CMakeFiles\Main.dir\src\boss.cpp.s
+
 CMakeFiles/Main.dir/src/employee.cpp.obj: CMakeFiles/Main.dir/flags.make
 CMakeFiles/Main.dir/src/employee.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
 CMakeFiles/Main.dir/src/employee.cpp.obj: Z:/ManagementSystems/src/employee.cpp
 CMakeFiles/Main.dir/src/employee.cpp.obj: CMakeFiles/Main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.dir/src/employee.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Main.dir/src/employee.cpp.obj"
 	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/employee.cpp.obj -MF CMakeFiles\Main.dir\src\employee.cpp.obj.d -o CMakeFiles\Main.dir\src\employee.cpp.obj -c Z:\ManagementSystems\src\employee.cpp
 
 CMakeFiles/Main.dir/src/employee.cpp.i: cmake_force
@@ -87,7 +102,7 @@ CMakeFiles/Main.dir/src/main.cpp.obj: CMakeFiles/Main.dir/flags.make
 CMakeFiles/Main.dir/src/main.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
 CMakeFiles/Main.dir/src/main.cpp.obj: Z:/ManagementSystems/src/main.cpp
 CMakeFiles/Main.dir/src/main.cpp.obj: CMakeFiles/Main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Main.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Main.dir/src/main.cpp.obj"
 	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/main.cpp.obj -MF CMakeFiles\Main.dir\src\main.cpp.obj.d -o CMakeFiles\Main.dir\src\main.cpp.obj -c Z:\ManagementSystems\src\main.cpp
 
 CMakeFiles/Main.dir/src/main.cpp.i: cmake_force
@@ -98,11 +113,26 @@ CMakeFiles/Main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/main.cpp.s"
 	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Z:\ManagementSystems\src\main.cpp -o CMakeFiles\Main.dir\src\main.cpp.s
 
+CMakeFiles/Main.dir/src/manager.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/manager.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/manager.cpp.obj: Z:/ManagementSystems/src/manager.cpp
+CMakeFiles/Main.dir/src/manager.cpp.obj: CMakeFiles/Main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Main.dir/src/manager.cpp.obj"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/manager.cpp.obj -MF CMakeFiles\Main.dir\src\manager.cpp.obj.d -o CMakeFiles\Main.dir\src\manager.cpp.obj -c Z:\ManagementSystems\src\manager.cpp
+
+CMakeFiles/Main.dir/src/manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/manager.cpp.i"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E Z:\ManagementSystems\src\manager.cpp > CMakeFiles\Main.dir\src\manager.cpp.i
+
+CMakeFiles/Main.dir/src/manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/manager.cpp.s"
+	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S Z:\ManagementSystems\src\manager.cpp -o CMakeFiles\Main.dir\src\manager.cpp.s
+
 CMakeFiles/Main.dir/src/workManager.cpp.obj: CMakeFiles/Main.dir/flags.make
 CMakeFiles/Main.dir/src/workManager.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
 CMakeFiles/Main.dir/src/workManager.cpp.obj: Z:/ManagementSystems/src/workManager.cpp
 CMakeFiles/Main.dir/src/workManager.cpp.obj: CMakeFiles/Main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Main.dir/src/workManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Main.dir/src/workManager.cpp.obj"
 	E:\vs_code\cpp\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.dir/src/workManager.cpp.obj -MF CMakeFiles\Main.dir\src\workManager.cpp.obj.d -o CMakeFiles\Main.dir\src\workManager.cpp.obj -c Z:\ManagementSystems\src\workManager.cpp
 
 CMakeFiles/Main.dir/src/workManager.cpp.i: cmake_force
@@ -115,21 +145,25 @@ CMakeFiles/Main.dir/src/workManager.cpp.s: cmake_force
 
 # Object files for target Main
 Main_OBJECTS = \
+"CMakeFiles/Main.dir/src/boss.cpp.obj" \
 "CMakeFiles/Main.dir/src/employee.cpp.obj" \
 "CMakeFiles/Main.dir/src/main.cpp.obj" \
+"CMakeFiles/Main.dir/src/manager.cpp.obj" \
 "CMakeFiles/Main.dir/src/workManager.cpp.obj"
 
 # External object files for target Main
 Main_EXTERNAL_OBJECTS =
 
+Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/src/boss.cpp.obj
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/src/employee.cpp.obj
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/src/main.cpp.obj
+Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/src/manager.cpp.obj
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/src/workManager.cpp.obj
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/build.make
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/linkLibs.rsp
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/objects1.rsp
 Z:/ManagementSystems/bin/Main.exe: CMakeFiles/Main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Z:\ManagementSystems\bin\Main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=Z:\ManagementSystems\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Z:\ManagementSystems\bin\Main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -128,6 +128,30 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+src/boss.obj: src/boss.cpp.obj
+.PHONY : src/boss.obj
+
+# target to build an object file
+src/boss.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/boss.cpp.obj
+.PHONY : src/boss.cpp.obj
+
+src/boss.i: src/boss.cpp.i
+.PHONY : src/boss.i
+
+# target to preprocess a source file
+src/boss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/boss.cpp.i
+.PHONY : src/boss.cpp.i
+
+src/boss.s: src/boss.cpp.s
+.PHONY : src/boss.s
+
+# target to generate assembly for a file
+src/boss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/boss.cpp.s
+.PHONY : src/boss.cpp.s
+
 src/employee.obj: src/employee.cpp.obj
 .PHONY : src/employee.obj
 
@@ -176,6 +200,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/manager.obj: src/manager.cpp.obj
+.PHONY : src/manager.obj
+
+# target to build an object file
+src/manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/manager.cpp.obj
+.PHONY : src/manager.cpp.obj
+
+src/manager.i: src/manager.cpp.i
+.PHONY : src/manager.i
+
+# target to preprocess a source file
+src/manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/manager.cpp.i
+.PHONY : src/manager.cpp.i
+
+src/manager.s: src/manager.cpp.s
+.PHONY : src/manager.s
+
+# target to generate assembly for a file
+src/manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/manager.cpp.s
+.PHONY : src/manager.cpp.s
+
 src/workManager.obj: src/workManager.cpp.obj
 .PHONY : src/workManager.obj
 
@@ -209,12 +257,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Main
+	@echo ... src/boss.obj
+	@echo ... src/boss.i
+	@echo ... src/boss.s
 	@echo ... src/employee.obj
 	@echo ... src/employee.i
 	@echo ... src/employee.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/manager.obj
+	@echo ... src/manager.i
+	@echo ... src/manager.s
 	@echo ... src/workManager.obj
 	@echo ... src/workManager.i
 	@echo ... src/workManager.s

@@ -8,12 +8,13 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "-I${workspaceFolder}/include",  // 添加 include 目录
-                "src/main.cpp",
-                "src/workManager.cpp",
-                "src/employee.cpp",
-                "src/manager.cpp",
-                "src/boss.cpp",
+                "-I${workspaceFolder}/include", // 添加 include 目录
+                "src/*.cpp", //这里使用*通配符来匹配src下所有的.cpp文件，不用重复再写，目前并没有遇到其他问题
+                // "src/main.cpp",
+                // "src/workManager.cpp",
+                // "src/employee.cpp",
+                // "src/manager.cpp",
+                // "src/boss.cpp",
                 "-o",
                 "${workspaceFolder}/bin/Main.exe",
                 "-fexec-charset=GBK"

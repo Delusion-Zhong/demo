@@ -1,4 +1,4 @@
-CMakeFiles/Main.dir/src/main.cpp.obj: Z:\ManagementSystems\src\main.cpp \
+CMakeFiles/Main.dir/src/boss.cpp.obj: Z:\ManagementSystems\src\boss.cpp \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -115,8 +115,5 @@ CMakeFiles/Main.dir/src/main.cpp.obj: Z:\ManagementSystems\src\main.cpp \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
- Z:/ManagementSystems/include/workManager.h \
- Z:/ManagementSystems/include/employee.h \
- Z:/ManagementSystems/include/worker.h \
- Z:/ManagementSystems/include/manager.h \
- Z:/ManagementSystems/include/boss.h
+ Z:/ManagementSystems/include/boss.h \
+ Z:/ManagementSystems/include/worker.h
