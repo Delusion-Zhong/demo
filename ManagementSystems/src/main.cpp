@@ -1,14 +1,28 @@
 #include <iostream>
+using namespace std;
+
 #include "workManager.h"
 #include "employee.h"
-using namespace std;
+#include "manager.h"
+#include "boss.h"
 
 int main()
 {
 
+    //测试代码
     Worker *worker = nullptr; // 创建一个父类类型的空指针
     worker = new Employee(1, "张三", 1);
     worker->showinfo();
+    delete worker;
+
+     worker = new Manager(2, "李四", 2);
+    worker->showinfo();
+
+    delete worker; 
+    worker = new Boss(3,"王五", 3);
+    worker->showinfo();
+    delete worker;
+
 
     // 实例化一个管理者的对象
     // WorkManager wm;

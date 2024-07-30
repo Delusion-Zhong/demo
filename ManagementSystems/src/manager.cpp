@@ -1,7 +1,7 @@
 #include <iostream> // 确保包含了必要的头文件
 using namespace std;
-#include "employee.h"
-Employee::Employee(int id, string name, int did)
+#include "manager.h"
+Manager::Manager(int id, string name, int did)
 {
     this->EmployeeNumber = id; // 职工编号
     this->name = name;         // 姓名
@@ -9,17 +9,17 @@ Employee::Employee(int id, string name, int did)
 };
 
 // 显示个人信息
-void Employee::showinfo()
+void Manager::showinfo()
 
 {
     cout << "职工编号:  " << this->EmployeeNumber
          << "\t姓名:  " << this->name
          << "\t部门信息:  " << this->getDeptname()
-         << "\t岗位职责: 完成经理安排的任务" << endl;
+         << "\t岗位职责: 完成老板安排的任务!" << endl;
 }
 
 // 获取岗位信息
-string Employee::getDeptname()
+string Manager::getDeptname()
 {
-    return string("员工");
+    return string("经理");
 }

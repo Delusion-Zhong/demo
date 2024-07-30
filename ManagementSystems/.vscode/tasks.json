@@ -12,6 +12,8 @@
                 "src/main.cpp",
                 "src/workManager.cpp",
                 "src/employee.cpp",
+                "src/manager.cpp",
+                "src/boss.cpp",
                 "-o",
                 "${workspaceFolder}/bin/Main.exe",
                 "-fexec-charset=GBK"
