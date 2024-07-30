@@ -128,6 +128,30 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+src/employee.obj: src/employee.cpp.obj
+.PHONY : src/employee.obj
+
+# target to build an object file
+src/employee.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/employee.cpp.obj
+.PHONY : src/employee.cpp.obj
+
+src/employee.i: src/employee.cpp.i
+.PHONY : src/employee.i
+
+# target to preprocess a source file
+src/employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/employee.cpp.i
+.PHONY : src/employee.cpp.i
+
+src/employee.s: src/employee.cpp.s
+.PHONY : src/employee.s
+
+# target to generate assembly for a file
+src/employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/employee.cpp.s
+.PHONY : src/employee.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Main
+	@echo ... src/employee.obj
+	@echo ... src/employee.i
+	@echo ... src/employee.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

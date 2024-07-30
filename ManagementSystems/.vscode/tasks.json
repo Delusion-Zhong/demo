@@ -8,11 +8,12 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "Z:/ManagementSystems/src/main.cpp",
-                "Z:/ManagementSystems/src/workManager.cpp",
-                "Z:/ManagementSystems/src/employee.cpp",
+                "-I${workspaceFolder}/include",  // 添加 include 目录
+                "src/main.cpp",
+                "src/workManager.cpp",
+                "src/employee.cpp",
                 "-o",
-                "D:/Temp/main.exe",
+                "${workspaceFolder}/bin/Main.exe",
                 "-fexec-charset=GBK"
             ],
             "options": {

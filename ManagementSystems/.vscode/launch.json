@@ -5,7 +5,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:/Temp/main.exe",  // 确保路径正确
+            "program": "${workspaceFolder}/bin/Main.exe",  // 更新为正确的可执行文件路径
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

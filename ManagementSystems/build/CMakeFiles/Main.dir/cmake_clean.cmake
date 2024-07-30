@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Main.dir/src/employee.cpp.obj"
+  "CMakeFiles/Main.dir/src/employee.cpp.obj.d"
   "CMakeFiles/Main.dir/src/main.cpp.obj"
   "CMakeFiles/Main.dir/src/main.cpp.obj.d"
   "CMakeFiles/Main.dir/src/workManager.cpp.obj"
   "CMakeFiles/Main.dir/src/workManager.cpp.obj.d"
-  "Main.exe"
-  "Main.exe.manifest"
-  "Main.pdb"
+  "Z:/ManagementSystems/bin/Main.exe"
+  "Z:/ManagementSystems/bin/Main.exe.manifest"
+  "Z:/ManagementSystems/bin/Main.pdb"
   "libMain.dll.a"
 )
 

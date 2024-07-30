@@ -1,0 +1,20 @@
+[
+{
+  "directory": "Z:/ManagementSystems/build",
+  "command": "E:\\vs_code\\cpp\\mingw64\\bin\\c++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Main.dir\\src\\employee.cpp.obj -c Z:\\ManagementSystems\\src\\employee.cpp",
+  "file": "Z:/ManagementSystems/src/employee.cpp",
+  "output": "CMakeFiles/Main.dir/src/employee.cpp.obj"
+},
+{
+  "directory": "Z:/ManagementSystems/build",
+  "command": "E:\\vs_code\\cpp\\mingw64\\bin\\c++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c Z:\\ManagementSystems\\src\\main.cpp",
+  "file": "Z:/ManagementSystems/src/main.cpp",
+  "output": "CMakeFiles/Main.dir/src/main.cpp.obj"
+},
+{
+  "directory": "Z:/ManagementSystems/build",
+  "command": "E:\\vs_code\\cpp\\mingw64\\bin\\c++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Main.dir\\src\\workManager.cpp.obj -c Z:\\ManagementSystems\\src\\workManager.cpp",
+  "file": "Z:/ManagementSystems/src/workManager.cpp",
+  "output": "CMakeFiles/Main.dir/src/workManager.cpp.obj"
+}
+]

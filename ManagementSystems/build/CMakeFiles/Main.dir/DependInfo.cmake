@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "Z:/ManagementSystems/src/employee.cpp" "CMakeFiles/Main.dir/src/employee.cpp.obj" "gcc" "CMakeFiles/Main.dir/src/employee.cpp.obj.d"
   "Z:/ManagementSystems/src/main.cpp" "CMakeFiles/Main.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Main.dir/src/main.cpp.obj.d"
   "Z:/ManagementSystems/src/workManager.cpp" "CMakeFiles/Main.dir/src/workManager.cpp.obj" "gcc" "CMakeFiles/Main.dir/src/workManager.cpp.obj.d"
   )

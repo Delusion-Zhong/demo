@@ -83,10 +83,6 @@ CMakeFiles/Main.dir/src/main.cpp.obj: Z:\ManagementSystems\src\main.cpp \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
- E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
- E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
- E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
- E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
  E:/vs_code/cpp/mingw64/x86_64-w64-mingw32/include/stdlib.h \
@@ -99,6 +95,7 @@ CMakeFiles/Main.dir/src/main.cpp.obj: Z:\ManagementSystems\src\main.cpp \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+ E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
@@ -118,4 +115,6 @@ CMakeFiles/Main.dir/src/main.cpp.obj: Z:\ManagementSystems\src\main.cpp \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  E:/vs_code/cpp/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
- Z:\ManagementSystems\src\workManager.h
+ Z:/ManagementSystems/include/workManager.h \
+ Z:/ManagementSystems/include/employee.h \
+ Z:/ManagementSystems/include/worker.h
