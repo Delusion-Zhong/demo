@@ -1,7 +1,7 @@
 #include <iostream> // 确保包含了必要的头文件
 using namespace std;
 #include "workManager.h"
-
+// 构造函数
 WorkManager::WorkManager()
 {
     ifstream ifs;
@@ -46,7 +46,7 @@ WorkManager::WorkManager()
     // 将文件中的数据，存到数组中
     this->init_Emp();
 
-        //  测试代码
+    //  测试代码
     // for (int i = 0; i < Empnum; i++)
     // {
     //     cout << " 职工编号: " << this->EmpArray[i]->EmployeeNumber
@@ -182,7 +182,7 @@ void WorkManager::ExitSystem()
     system("pause");
     exit(0); // 退出程序
 };
-
+// 获取人数
 int WorkManager::get_EmpNum()
 {
     ifstream ifs;
@@ -200,6 +200,7 @@ int WorkManager::get_EmpNum()
 
 // 初始化职工
 void WorkManager::init_Emp()
+
 {
     ifstream ifs;
     ifs.open(FILENAME, ios::in);
@@ -227,7 +228,23 @@ void WorkManager::init_Emp()
     };
     ifs.close();
 }
+// 显示职工内容
+void WorkManager::Show_Emp()
+{
+    if (this->FileIsEmpty)
+    {
+        cout << "文件不存在或者文件为空" << endl;
+    }
+    else
+    {
+        for (int i = 0; i < Empnum; i++)
+        {
+            this->EmpArray[i]->showinfo();
+        }
+    }
+};
 
+// 析构函数
 WorkManager::~WorkManager()
 {
     if (this->EmpArray != nullptr)

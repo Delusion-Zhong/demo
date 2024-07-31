@@ -15,15 +15,18 @@ public:
     int Empnum;
     // 职工数组的指针
     Worker **EmpArray;
-
+ 
     // 判断文件是否为空
     bool FileIsEmpty;
 
-    // 统计文件中的数
+    // 统计文件中的人数
     int get_EmpNum();
 
     // 初始化职工
     void init_Emp();
+
+    // 显示职工
+    void Show_Emp();
 
     // 构造函数
     WorkManager();
