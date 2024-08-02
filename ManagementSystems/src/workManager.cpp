@@ -43,6 +43,7 @@ WorkManager::WorkManager()
     this->Empnum = num;
     // 开辟空间
     this->EmpArray = new Worker *[this->Empnum];
+    this->FileIsEmpty = false;
     // 将文件中的数据，存到数组中
     this->init_Emp();
 
@@ -168,9 +169,9 @@ void WorkManager::save()
     ofs.open(FILENAME, ios::out); // 写文件
     for (int i = 0; i < Empnum; i++)
     {
-        ofs << this->EmpArray[i]->EmployeeNumber << " "
-            << this->EmpArray[i]->name << " "
-            << this->EmpArray[i]->DoorNumber << " " << endl;
+        ofs << this->EmpArray[i]->EmployeeNumber << ","
+            << this->EmpArray[i]->name << ","
+            << this->EmpArray[i]->DoorNumber << "." << endl;
     }
 
     ofs.close();
@@ -242,6 +243,59 @@ void WorkManager::Show_Emp()
             this->EmpArray[i]->showinfo();
         }
     }
+    system("pause");
+    system("cls");
+};
+// 删除职工
+void WorkManager::Del_Emp()
+{
+    if (this->FileIsEmpty)
+    {
+        cout << "文件不存在或者为空！" << endl;
+    }
+    else
+    {
+        cout << "请输入删除的员工编号" << endl;
+        int id = 0; // 记录输入的值
+        cin >> id;
+        int index = this->IsExist(id); //  判断职工是否存在,存在返回员工编号，不存在 返回-1
+        if (index != -1)
+        {
+            /* 数据迁移*/
+            for (int i = index; i < this->Empnum; i++)
+            {
+                this->EmpArray[i] = this->EmpArray[i + 1]; // 通过数组的覆盖进行删除
+            }
+            this->Empnum--; // 更新
+
+            // 将修改后的文件同步到txt文件中
+            this->save();
+            cout << "删除成功" << endl;
+        }
+        else
+        {
+            cout << "删除错误" << endl;
+        }
+    }
+
+    system("pause");
+    system("cls");
+};
+// 判断职工是否存在,存在返回员工编号，不存在 返回-1
+int WorkManager::IsExist(int id)
+{
+    int index = -1; // 初始化不存在 - 1
+    for (int i = 0; i < this->Empnum; i++)
+    {
+        /* 通过遍历每个员工的id和传入的id是否相同*/
+        if (this->EmpArray[i]->EmployeeNumber == id)
+        {
+            // 找到了
+            index = 1;
+            break;
+        }
+    }
+    return index;
 };
 
 // 析构函数

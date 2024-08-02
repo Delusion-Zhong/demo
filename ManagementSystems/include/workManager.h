@@ -15,7 +15,7 @@ public:
     int Empnum;
     // 职工数组的指针
     Worker **EmpArray;
- 
+
     // 判断文件是否为空
     bool FileIsEmpty;
 
@@ -39,6 +39,11 @@ public:
     void Add_Emp();
     // 保存文件
     void save();
-    // 析构函数
+
+    // 删除职工
+    void Del_Emp();
+    // 判断职工是否存在,存在返回员工编号，不存在 返回-1
+    int IsExist(int id);
+    //  析构函数
     ~WorkManager();
 };

@@ -47,7 +47,11 @@ int main()
             wm.Show_Emp();
             break;
         case 3: // 删除职工
+
+            wm.Del_Emp();
+
             break;
+
         case 4: // 修改职工
             break;
         case 5: // 查找职工
