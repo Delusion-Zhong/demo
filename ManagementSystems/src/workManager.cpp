@@ -71,7 +71,7 @@ void WorkManager::Show_Menu()
     cout << "****************************************" << endl;
     cout << endl;
 };
-
+// 添加
 void WorkManager::Add_Emp()
 {
     system("cls");
@@ -169,9 +169,9 @@ void WorkManager::save()
     ofs.open(FILENAME, ios::out); // 写文件
     for (int i = 0; i < Empnum; i++)
     {
-        ofs << this->EmpArray[i]->EmployeeNumber << ","
-            << this->EmpArray[i]->name << ","
-            << this->EmpArray[i]->DoorNumber << "." << endl;
+        ofs << this->EmpArray[i]->EmployeeNumber << " "
+            << this->EmpArray[i]->name << " "
+            << this->EmpArray[i]->DoorNumber << " " << endl;
     }
 
     ofs.close();
@@ -291,19 +291,217 @@ int WorkManager::IsExist(int id)
         if (this->EmpArray[i]->EmployeeNumber == id)
         {
             // 找到了
-            index = 1;
+            index = i;
             break;
         }
     }
     return index;
 };
+// 修改
+void WorkManager::Mod_Emp()
+{
+    if (this->FileIsEmpty)
+    {
+        cout << "文件不存在或者为空！" << endl;
+    }
+    else
+    {
+        cout << "请输入想要修改的职工编号：" << endl;
+        int id = 0;
+        string name = "";
+        int Post = 0;
+        cin >> id;
+        int ret = this->IsExist(id); // 判断职工是否存在，存在返回员工编号，不存在返回-1
+        if (ret != -1)
+        {
+            delete this->EmpArray[ret];
 
+            cout << "查到" << id << "号职工，请输入新的职工号" << endl;
+            cin >> id;
+            cout << "请输入姓名：" << endl;
+            cin >> name;
+            cout << "请输入岗位： 1.普通员工 2.经理 3.老板" << endl;
+            cin >> Post;
+            Worker *Worker = nullptr;
+            switch (Post)
+            {
+            case 1:
+                Worker = new Employee(id, name, Post);
+                break;
+            case 2:
+                Worker = new Manager(id, name, Post);
+                break;
+            case 3:
+                Worker = new Boss(id, name, Post);
+                break;
+
+            default:
+                break;
+            }
+
+            this->EmpArray[ret] = Worker;
+            cout << "修改成功" << endl;
+            this->save();
+        }
+        else
+        {
+            cout << "修改失败,查无此人" << endl;
+        }
+
+        system("pause");
+        system("cls");
+    };
+}
+
+// 查找员工
+void WorkManager::Find_Emp()
+{
+    if (this->FileIsEmpty)
+    {
+        cout << "文件不存在或者为空！" << endl;
+    }
+    else
+    {
+        cout << "请输入查找的方式： 1.按照id 2.姓名" << endl;
+
+        int select = 0;
+        cin >> select;
+        if (select == 1) // 按照 id查找
+        {
+            int id = 0;
+            cout << "请输入查找的id" << endl;
+            cin >> id;
+            int ret = this->IsExist(id);
+            if (ret != -1)
+            {
+                cout << "查找成功" << endl;
+                this->EmpArray[ret]->showinfo(); // 使用 ret 而不是 id
+            }
+            else
+            {
+                cout << "查无此人" << endl;
+            }
+        }
+        else if (select == 2) // 按照姓名查找
+        {
+            string name = "";
+            cout << "请输入查找的姓名：" << endl;
+            cin >> name;
+            bool found = false;
+            for (int i = 0; i < this->Empnum; i++)
+            {
+                if (EmpArray[i]->name == name)
+                {
+                    cout << "查到此人" << endl;
+                    this->EmpArray[i]->showinfo();
+                    found = true;
+                }
+            }
+            if (!found)
+            {
+                cout << "查找失败，查无此人" << endl;
+            }
+        }
+        else
+        {
+            cout << "输入有误" << endl;
+        }
+    }
+    system("pause");
+    system("cls");
+}
+
+// 排序
+void WorkManager::Srot_Emp()
+{
+    if (this->FileIsEmpty)
+    {
+        cout << "文件不存在或者为空！" << endl;
+    }
+    else
+    {
+        cout << "请选择排序方式 :\n  1.按照工号升序 2.按照工号降序" << endl;
+        int select = 0;
+        cin >> select;
+
+        for (int i = 0; i < Empnum - 1; i++)
+        {
+            int minormax = i; // 最小或最大值的索引
+            for (int j = i + 1; j < Empnum; j++)
+            {
+                if (select == 1) // 升序
+                {
+                    if (EmpArray[minormax]->EmployeeNumber > EmpArray[j]->EmployeeNumber)
+                    {
+                        minormax = j;
+                    }
+                }
+                else if (select == 2) // 降序
+                {
+                    if (this->EmpArray[minormax]->EmployeeNumber < this->EmpArray[j]->EmployeeNumber)
+                    {
+                        minormax = j;
+                    }
+                }
+            }
+            if (i != minormax)
+            {
+                Worker *temp = this->EmpArray[i];
+                this->EmpArray[i] = this->EmpArray[minormax];
+                this->EmpArray[minormax] = temp;
+            }
+        }
+        cout << "排序成功" << endl;
+        this->save();
+        system("pause");
+        system("cls");
+    }
+}
+// 清空文档
+void WorkManager::Clean_Emp()
+{
+
+    cout << "确认清空？ 1.确认 2. 否" << endl;
+    int select = 0;
+    cin >> select;
+    if (select == 1)
+    {
+        ofstream ofs(FILENAME, ios::trunc);
+        ofs.close();
+
+        if (this->EmpArray != nullptr)
+        {
+            for (int i = 0; i < this->Empnum; i++)
+            {
+                if (this->EmpArray[i] != nullptr)
+                {
+                    delete this->EmpArray[i];
+                }
+            }
+            this->Empnum = 0;
+            delete[] this->EmpArray;
+            this->EmpArray = nullptr;
+            this->FileIsEmpty = true;
+        }
+        cout << "清空完成" << endl;
+    }
+    system("pause");
+    system("cls");
+};
 // 析构函数
 WorkManager::~WorkManager()
 {
     if (this->EmpArray != nullptr)
     {
+        for (int i = 0; i < this->Empnum; i++)
+        {
+            if (this->EmpArray[i] != nullptr)
+            {
+                delete this->EmpArray[i];
+                this->EmpArray[i] = nullptr;
+            }
+        }
         delete[] this->EmpArray;
         this->EmpArray = nullptr;
     }
-};
+}

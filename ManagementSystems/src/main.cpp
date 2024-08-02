@@ -53,12 +53,16 @@ int main()
             break;
 
         case 4: // 修改职工
+            wm.Mod_Emp();
             break;
         case 5: // 查找职工
+            wm.Find_Emp();
             break;
         case 6: // 排序
+            wm.Srot_Emp();
             break;
         case 7: // 清空文档
+            wm.Clean_Emp();
             break;
         default:
             system("cls");

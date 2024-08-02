@@ -44,6 +44,17 @@ public:
     void Del_Emp();
     // 判断职工是否存在,存在返回员工编号，不存在 返回-1
     int IsExist(int id);
-    //  析构函数
+
+    // 修改职工
+    void Mod_Emp();
+
+    // 查找员工
+    void Find_Emp();
+
+    // 排序
+    void Srot_Emp();
+    // 清空文档
+    void Clean_Emp();
+    //    析构函数
     ~WorkManager();
 };
